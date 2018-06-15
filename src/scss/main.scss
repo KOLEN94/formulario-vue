@@ -1,0 +1,60 @@
+@import"~bulma/bulma.sass";
+$color-dom: #F2F2F2;
+$color-cont: #FFFFFF;
+$color-label-input: #FF9300;
+$color-letra: #212121;
+$color-button: #00bfd6;
+
+html{
+	background-color: $color-dom;
+	font-family:Roboto;
+}
+body{
+	#app{
+		text-align:center;
+		margin: 5em auto;
+		height: 409px;
+		width: 320px;
+		background-color: $color-cont;
+		h1{
+			font-weight: bold;
+			font-size:1.3em;
+			color:$color-button;
+			margin-bottom:1em;
+		}
+		div{
+			padding: .5em 1.9em;
+			label{
+				width:100%;
+				display:block;
+				text-align:left;
+				color: $color-label-input;
+				font-weight: bold;
+				font-size: 11px;
+			}
+			input[type="text"]{
+				width:100%;
+				border: none;
+				border-bottom: 1px solid $color-label-input;
+				padding:3px;
+				font-size: 19px;
+				color: $color-letra;
+				&:focus{
+					outline:0px;
+				}
+			}
+		}
+		div:nth-child(4){
+			text-align:right;
+			button{
+				border: none;
+				background-color:$color-button;
+				text-transform:uppercase;
+				color:$color-cont;
+				padding:7px 40px;
+				font-size: 14px;
+				font-weight: 600;
+			}
+		}
+	}
+}
